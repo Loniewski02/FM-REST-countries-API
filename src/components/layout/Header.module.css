@@ -1,6 +1,7 @@
 .header {
 	padding: 2.4rem 1.6rem;
 	background-color: var(--bg2);
+	box-shadow: 0 4px 4px var(--shadow);
 }
 
 .header > div {
