@@ -1,0 +1,16 @@
+.countries {
+	padding: 2.4rem 1.6rem;
+}
+
+.countries > div {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 28px;
+}
+
+@media (min-width: 992px) {
+	.countries > div {
+		gap: 48px;
+	}
+}

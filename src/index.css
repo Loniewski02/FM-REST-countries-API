@@ -1,0 +1,64 @@
+:root {
+	--text: #111517; /* (Light Mode Text) */
+	--input: #858585; /* (Light Mode Input) */
+	--bg: #fafafa; /* (Light Mode Background) */
+	--bg2: #ffffff; /* (Dark Mode Text & Light Mode Elements) */
+	--hover: #f4f4f4;
+	--shadow: rgba(0, 0, 0, 0.1);
+	--contr: #c7326b;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.6rem;
+	background-color: var(--bg);
+}
+
+.dark-theme {
+	--text: #ffffff;
+	--input: #ffffff;
+	--bg: #202c37;
+	--bg2: #2b3945;
+	--hover: #334452;
+}
+
+.light-theme {
+	--text: #111517;
+	--input: #858585;
+	--bg: #fafafa;
+	--bg2: #ffffff;
+	--hover: #f4f4f4;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #ffffff;
+		--input: #ffffff;
+		--bg: #202c37;
+		--bg2: #2b3945;
+		--hover: #334452;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--text: #111517;
+		--input: #858585;
+		--bg: #fafafa;
+		--bg2: #ffffff;
+		--hover: #f4f4f4;
+	}
+}

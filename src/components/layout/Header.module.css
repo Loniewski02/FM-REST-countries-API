@@ -1,0 +1,62 @@
+.header {
+	padding: 2.4rem 1.6rem;
+	background-color: var(--bg2);
+}
+
+.header > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header h2 {
+	font-size: 1.4rem;
+	font-weight: 800;
+	color: var(--text);
+}
+
+.header button {
+	position: relative;
+	padding: 2px;
+	width: 38px;
+	border-radius: 2em;
+	background-color: var(--bg);
+	border: 2px solid var(--input);
+	cursor: pointer;
+}
+
+.header button > span {
+	position: relative;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--text);
+}
+
+@media (min-width: 576px) {
+	.header h2 {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.header h2 {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.header h2 {
+		font-size: 2.4rem;
+	}
+
+	.header button {
+		width: 48px;
+	}
+
+	.header button > span {
+		width: 20px;
+		height: 20px;
+	}
+}

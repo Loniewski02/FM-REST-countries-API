@@ -1,0 +1,12 @@
+.error {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.error h1,
+.error p {
+	color: var(--text);
+}

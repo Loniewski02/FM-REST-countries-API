@@ -1,0 +1,80 @@
+.country {
+	width: 264px;
+	background-color: var(--bg2);
+	box-shadow: 0 0px 7px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.country__imgs {
+	position: relative;
+	height: 160px;
+	width: 264px;
+	z-index: 0;
+	overflow: hidden;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.country__imgs-img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	z-index: 2;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+.country__imgs-blur {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 105%;
+	height: 105%;
+	object-fit: cover;
+	z-index: 1;
+	filter: blur(5px);
+}
+
+.country__imgs-img:hover {
+	transform: scale(1.1);
+}
+
+.country h3 {
+	margin-bottom: 1.6rem;
+	color: var(--text);
+	font-weight: 800;
+}
+
+.country h3 > a {
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+}
+
+.country h3 > a::before,
+.country h3 > a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background-color: var(--contr);
+	transition: width 0.3s;
+}
+
+.country h3 > a::before {
+	left: 50%;
+}
+
+.country h3 > a::after {
+	right: 50%;
+}
+
+.country h3 > a:hover::after,
+.country h3 > a:hover::before {
+	width: 50%;
+}
+
+.country__info {
+	padding: 2.4rem 2.4rem 4.6rem 2.4rem;
+}

@@ -1,0 +1,121 @@
+.controls {
+	padding: 2.4rem 1.6rem;
+}
+
+.controls > div {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.controls__input {
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: var(--text);
+}
+
+.controls__input input {
+	padding: 1.6rem 1.6rem 1.6rem 7.4rem;
+}
+
+.controls__input > label {
+	position: absolute;
+	display: flex;
+	left: 3.2rem;
+}
+
+.controls__input input,
+.controls__filter-btn,
+.controls__filter-list .controls__input input {
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	color: var(--text);
+	font-family: inherit;
+	font-weight: 400;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	transition: background-color 0.3s;
+	background-color: var(--bg2);
+	box-shadow: 0 4px 4px var(--shadow);
+
+	border-radius: 5px;
+}
+
+.controls .controls__filter {
+	position: relative;
+	max-width: 200px;
+}
+
+.controls__filter-btn {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.6rem 2.4rem;
+	color: var(--text);
+	cursor: pointer;
+	z-index: 1021;
+}
+
+.controls__filter-list {
+	position: absolute;
+	width: 100%;
+	padding: 1.6rem 0;
+	margin-top: 0.4rem;
+	background-color: var(--bg2);
+	border-radius: 5px;
+	box-shadow: 0 4px 4px var(--shadow);
+	z-index: 100;
+}
+
+.controls__filter-list button {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 2.4rem;
+	text-align: left;
+	font-size: 1.2rem;
+	font-family: inherit;
+	font-weight: 400;
+	border: none;
+	color: var(--text);
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.controls__filter-btn:hover,
+.controls__input input:hover,
+.controls__filter-list button:hover {
+	background-color: var(--hover);
+}
+
+@media (min-width: 768px) {
+	.controls__input input {
+		font-size: 1.4rem;
+	}
+
+	.controls__filter-btn {
+		font-size: 1.4rem;
+	}
+
+	.controls__filter-list button {
+		font-size: 1.4rem;
+	}
+
+	.controls > div {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.controls__input {
+		width: 480px;
+	}
+
+	.controls__filter {
+		width: 200px;
+	}
+}
